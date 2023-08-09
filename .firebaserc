@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "devdactic-e17c3": {
+      "hosting": {
+        "app": [
+          "devdactic-e17c3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "devdactic-e17c3"
+  }
+}

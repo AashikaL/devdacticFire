@@ -1,0 +1,26 @@
+{
+  "hosting": [
+    {
+      "target": "app",
+      "source": ".",
+      "frameworksBackend": {}
+    },
+    {
+      "rules": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "uploads": {
+          "$uid": {
+            ".read": "auth != null",
+            ".write": "auth != null"
+          }
+        },
+        "$other": {
+          ".read": "auth != null",
+          ".write": "auth != null"
+        }
+      }
+    }
+    
+  ]
+}
